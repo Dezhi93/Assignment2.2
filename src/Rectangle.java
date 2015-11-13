@@ -1,4 +1,4 @@
-
+/* Rectangle class */
 public class Rectangle extends Shape{
 
 	double height,width;

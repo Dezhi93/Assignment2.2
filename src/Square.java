@@ -1,4 +1,4 @@
-
+/* Square class */
 public class Square extends Shape{
 
 	double length;

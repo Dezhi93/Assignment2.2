@@ -1,0 +1,18 @@
+Design:
+	Clerk and Manager are both Staff, so they extend Staff. One Customer maybe have many Account, so Customer interface Account.
+Class Staff
+(1)	Staff is an abstract class, including abstract method paySalary(int m).
+(2)	paySalary(int m) is a method to pay staff salary, set salary.
+
+Classes Clerk, Manager
+(1)	The two classes need to extend Staff and override the methods paySalary().
+(2)	Clerk also including methods saveMoney(int m, Account a) and withdraw(int m, Account a), make the corresponding account’s money add and sub.
+(3)	Manager including a method manage(Clerk c) to manage clerk.
+
+Class Customer
+(1)	Customer implement interface Account, including a method toString() and implement addAccount(int m) and subaccount(int m).
+(2)	toString() is a method return a string like “My account 1 has 100 dollars.”
+(3)	addAccount(int m) and subaccount(int m) are methods to add and sub money.
+Class Bank
+(1)	The Class lets customers save money and withdraw, and pay money to staff.
+(2)	Including many Account and Staff and Customer.
